@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Website 12A12</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="GT1.css">
+</head>
+
+<body>
+
+<img id="bird" src="a/bird.png" alt="Chim bay trang trí">
+
+<header class="top-header">
+  <div class="brand">12A12</div>
+  <nav class="nav">
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#giaovien">Giáo viên</a>
+    <a href="#bancansu">Ban cán sự</a>
+    <a href="#tkb">Thời khóa biểu</a>
+    <a href="#baobai">Báo bài</a>
+    <a href="#thongbao">Thông báo</a>
+    <a href="#lich" onclick="scrollToCalendar()">Lịch nhớ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <h2>📅 LỊCH NHỚ</h2>
+    <div id="miniCalendar"></div>
+    <p class="note">Ảnh kỷ niệm gần nhất</p>
+    <img src="a/thuongHKI.jpg" class="recent-img" alt="Ảnh kỷ niệm">
+  </div>
+
+  <div class="hero-right">
+    <h2>Hành trình vươn xa</h2>
+
+    <div class="progress-box">
+    <div id="progressBar"></div>
+    </div>
+    <p id="progressText">Đang trên đường tới kỳ thi tốt nghiệp 2026</p>
+
+    <!-- LOGO TRƯỜNG -->
+    <div class="uni-cloud">
+      <a class="uni-link" data-url="https://www.ftu.edu.vn">
+        <img src="a/ftu.png" class="uni-logo" alt="ĐH Ngoại thương">
+      </a>
+      <a class="uni-link" data-url="https://uel.edu.vn">
+        <img src="a/uel.png" class="uni-logo" alt="ĐH Kinh tế - Luật">
+      </a>
+      <a class="uni-link" data-url="https://hcmussh.edu.vn">
+        <img src="a/usshpng.png" class="uni-logo" alt="ĐH KHXH&NV">
+      </a>
+      <a class="uni-link" data-url="https://www.hcmue.edu.vn">
+        <img src="a/sp.png" class="uni-logo" alt="ĐH Sư phạm HCM">
+      </a>
+      <a class="uni-link" data-url="https://hcmus.edu.vn">
+        <img src="a/khtn.png" class="uni-logo" alt="ĐH KHTN">
+      </a>
+      <a class="uni-link" data-url="https://huit.edu.vn">
+        <img src="a/huit.png" class="uni-logo" alt="ĐH Công thương">
+      </a>
+      <a class="uni-link" data-url="https://hcmut.edu.vn">
+        <img src="a/hust.png" class="uni-logo" alt="ĐH Bách khoa">
+      </a>
+      <a class="uni-link" data-url="https://www.ueh.edu.vn">
+        <img src="a/ueh.png" class="uni-logo" alt="ĐH Kinh tế TP.HCM">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GIÁO VIÊN -->
+<section id="giaovien" class="section split">
+  <img src="a/GVCN.png" class="gv-img" alt="Giáo viên chủ nhiệm">
+  <div class="gv-info">
+    <h2>Giáo viên chủ nhiệm</h2>
+    <p><b>Cô Lê Thị Hồng Mai</b></p>
+    <p>Môn: Ngữ Văn</p>
+    <p>Người luôn đồng hành cùng 12A12.</p>
+  </div>
+</section>
+
+<!-- BAN CÁN SỰ -->
+<section id="bancansu" class="section">
+  <h2>Ban cán sự lớp</h2>
+  <div class="grid-3">
+    <div class="card">👑 Lớp trưởng<br><b>Công Ngô Uyên Nhi</b></div>
+    <div class="card">📘 Lớp phó học tập<br><b>Vũ An Bình</b></div>
+    <div class="card">🧩 Lớp phó kỷ luật<br><b>Phan Kim Hoàn</b></div>
+  </div>
+</section>
+
+<!-- THỜI KHÓA BIỂU -->
+<section id="tkb" class="section">
+  <h2>Thời khóa biểu</h2>
+  <div class="tkb">
+    <table>
+      <tr><th>Buổi</th><th>Tiết</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th><th>T6</th></tr>
+      <tr><td rowspan="4">Sáng</td><td>1</td><td>TN-HN</td><td>Công nghệ</td><td>Địa</td><td>Tin</td><td>KT-PL</td></tr>
+      <tr><td>2</td><td>Văn</td><td>Văn</td><td>Địa</td><td>Tin</td><td>Toán</td></tr>
+      <tr><td>3</td><td>Công nghệ</td><td>Văn</td><td>Anh</td><td>KT-PL</td><td>Toán</td></tr>
+      <tr><td>4</td><td>GD-QP</td><td>Văn</td><td>Anh</td><td>Toán</td><td>Sử</td></tr>
+      <tr><td rowspan="2">Chiều</td><td>1</td><td>TN-HN</td><td>TD</td><td>Toán</td><td>GD-ĐP</td></tr>
+      <tr><td>2</td><td>Địa</td><td>TD</td><td>Anh</td><td>TN-HN</td></tr>
+    </table>
+  </div>
+</section>
+<!-- BÁO BÀI -->
+<section id="baobai" class="section">
+  <h2>Báo bài theo ngày</h2>
+  <div class="grid-5">
+    <div class="card">Thứ 2<br>
+        <ul>
+            <li>Đi sớm chào cờ</li>
+            <li>GD-QP: mang theo đồ thể dục</li>
+        </ul>
+    </div>
+    <div class="card">Thứ 3<br>
+        <ul>
+            <li>Địa: ghi chép đề cương đầy đủ</li>
+            <li>Văn: mang theo chuyên đề</li>
+        </ul></div>
+    <div class="card">Thứ 4<br>
+        <ul>
+            <li>Địa: ghi bài</li>
+            <li>Anh: làm trước các câu trắc nghiệm</li>
+        </ul></div>
+    <div class="card">Thứ 5<br>
+        <ul>
+            <li>Tin:Nộp bài thực hành </li>
+            <li>KT-PL: đọc trước bài tiếp theo</li>
+            <li>Toán: ôn bài tập đã làm ngày hôm qua</li>
+        </ul></div>
+    <div class="card">Thứ 6<br>
+        <ul>
+            <li>Toán: kiểm tra 1 tiết</li>
+            <li>Sử: ghi bài đầy đủ</li>
+        </ul></div>
+  </div>
+</section>
+<!-- THÔNG BÁO -->
+<section id="thongbao" class="section notice-section">
+  <h2>🔔 Thông báo</h2>
+
+  <div class="notice-card important">
+    <h3>📌 Nội quy trường lớp</h3>
+    <p>Chấp hành nghiêm nội quy, đi học đúng giờ, mặc đồng phục đúng quy định.</p>
+  </div>
+
+  <div class="notice-card">
+    <h3>📝 Kiểm tra giữa HKII</h3>
+    <p>Theo dõi lịch kiểm tra và ôn tập theo hướng dẫn của giáo viên bộ môn.</p>
+  </div>
+
+  <div class="notice-card">
+    <h3>🎉 Hoạt động ngoại khóa</h3>
+    <p>Trang trí đón Tết 2026 và các hoạt động tập thể sắp diễn ra.</p>
+  </div>
+</section>
+<!-- CUỐN LỊCH KỶ NIỆM -->
+<section id="lich" class="section">
+  <h2>Cuốn lịch kỷ niệm</h2>
+  <div class="month-list">
+    <!-- THÁNG 9 -->
+    <div class="month-card" data-month="9">
+      <h3>Tháng 9</h3>
+      <div class="month-preview">
+        <img src="a/aolop.jpg" data-day="29/5" data-note="Áo lớp">
+        <img src="a/nhat.jpg" data-note="Hạng nhất khối">
+        <img src="a/traitim.jpg" data-note="Lời nhắn của phụ huynh">
+        <img src="a/tao.jpg" data-note="Táo nguyện vọng">
+      </div>
+    </div>
+    <div class="month-card" data-month="10">
+      <h3>Tháng 10</h3>
+      <!-- ẢNH CHẠY TỰ ĐỘNG -->
+      <div class="month-preview">
+        <img src="a/20_10.jpg" data-day="20/10" data-note="Quốc tế phụ nữ">
+      </div>
+    </div>
+    <!-- THÁNG 11 -->
+    <div class="month-card" data-month="11">
+      <h3>Tháng 11</h3>
+      <div class="month-preview">
+      <img src="a/19_11.jpg" data-day="19/11" data-note="Ngày quốc tế đàn ông">
+      <img src="a/20_11.jpg" data-day="20/11" data-note="Lễ 20/11">
+      <img src="a/20_11_thiep.jpg" data-day="20/11" data-note="Thiệp và hoa 20/11">
+      </div>
+    </div>
+    <!--Tháng 12-->
+    <div class="month-card" data-month="12">
+      <h3>Tháng 12</h3>
+      <div class="month-preview">
+      <img src="a/13_12.jpg" data-day="13/12" data-note="Thi rung chuông vàng">
+      <img src="a/quaGS.jpg" data-note="Gói quà giáng sinh">
+      <img src="a/GS_co.jpg" data-day="24/12" data-note="Giáng sinh cùng cô Mai">
+      <img src="a/GS_thay_nguyet.jpg" data-day="24/12" data-note="Giáng sinh cùng cô thầy Nguyệt">
+      </div>
+    </div>
+    <div class="month-card" data-month="1">
+      <h3>Tháng 1</h3>
+      <div class="month-preview">
+      <img src="a/DL1.jpg" data-day="15/1" data-note="Đà Lạc">
+      <img src="a/DL2.jpg" data-day="15/1" data-note="Đà Lạc">
+      <img src="a/DL3.jpg" data-day="15/11" data-note="Chợ đêm Đà Lạc">
+      <img src="a/DL4.jpg" data-day="16/11" data-note="Đà Lạc TeamBuilding">
+      <img src="a/thuongHKI.jpg" data-day="23/1" data-note="Khen thưởng HKI">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- MODAL XEM ẢNH + CUỐN LỊCH (DÙNG CHUNG) -->
+<div id="imgModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+
+    <!-- tiêu đề tháng -->
+    <h3 id="monthTitle"></h3>
+
+    <!-- gallery ảnh của tháng -->
+    <div class="month-gallery" id="monthGallery"></div>
+
+    <!-- ảnh phóng to -->
+    <img id="modalImg" alt="Ảnh kỷ niệm">
+
+    <!-- ghi chú -->
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<h1>BAY TỚI CHÂN TRỜI TƯƠI SÁNG PHÍA TRƯỚC ✈️</h1>
+<script src="GT1.js"></script>
+<footer>
+  © 12A12 – Nơi từng khoảng khắc được lưu trữ
+</footer>
+
+</body>
+</html>
